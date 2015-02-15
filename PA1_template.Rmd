@@ -6,6 +6,8 @@ output:
 ---
 ```{r echo=FALSE}
 #load ggplot2/lattice libraries
+library(knitr)
+library(markdown)
 library(ggplot2)
 library(lattice)
 ```
