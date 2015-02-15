@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 
 ## Loading and preprocessing the data
@@ -76,7 +81,7 @@ with(totalStepsPerDay, {
 })
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png) 
 
 3. Calculate and report the mean and median of the total number of steps taken per day
 
@@ -117,7 +122,7 @@ with(intervalOfAvgStepsPerDay, {
 })
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
 
 2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -232,7 +237,7 @@ with(totalNAFreeStepsPerDay, {
 })
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-12-1.png) 
+![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png) 
 
 - mean and median total number of steps taken per day
 
@@ -311,4 +316,4 @@ intervalStepsByDay <- aggregate(data=naFreeActivity,steps ~ day + interval, FUN=
 xyplot(steps ~ interval | day, data=intervalStepsByDay, type="l", grid=T, layout=c(1,2), ylab="Number of steps", xlab="5-min. intervals", main="Average  5-min. activity intervals: Weekdays vs. Weekends")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-16-1.png) 
+![plot of chunk unnamed-chunk-16](figure/unnamed-chunk-16-1.png) 
